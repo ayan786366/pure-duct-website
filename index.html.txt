@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pure Duct Cleaners</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #f9f9f9; color: #333; }
+
+header {
+background: #063d77;
+color: #fff;
+padding: 1rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+header img { height: 50px; }
+header nav a {
+margin-left: 1rem;
+color: #fff;
+text-decoration: none;
+font-weight: 500;
+}
+
+.slider {
+position: relative;
+width: 100%;
+height: 70vh;
+overflow: hidden;
+}
+.slides {
+display: flex;
+width: 300%;
+height: 100%;
+animation: slide 12s infinite;
+}
+.slide {
+flex: 1 0 100%;
+background-size: cover;
+background-position: center;
+position: relative;
+}
+.slide::after {
+content: "";
+position: absolute;
+inset: 0;
+background: rgba(0,0,0,0.3);
+}
+.slide h2 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #fff;
+font-size: 2.5rem;
+z-index: 1;
+}
+
+@keyframes slide {
+0% { transform: translateX(0%); }
+33% { transform: translateX(-100%); }
+66% { transform: translateX(-200%); }
+100% { transform: translateX(0%); }
+}
+
+nav, .btn { cursor: pointer; }
+
+nav .btn-call, nav .btn-whatsapp {
+background: #1dbf4a;
+color: #fff;
+padding: 0.6rem 1rem;
+border: none;
+border-radius: 4px;
+font-size: 0.9rem;
+margin-left: 0.5rem;
+text-decoration: none;
+}
+
+section { padding: 3rem 2rem; text-align: center; }
+
+.services, .testimonials { display: grid; gap: 2rem; }
+.services { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.service-card {
+background: #fff;
+padding: 1.5rem;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.service-card h3 { margin-bottom: 0.5rem; }
+.service-card p { margin-bottom: 1rem; color: #555; }
+.service-card .price {
+font-weight: 600;
+color: #063d77;
+}
+
+.testimonials { grid-template-columns: 1fr; }
+.testimonial {
+background: #fff;
+padding: 1.5rem;
+border-radius: 8px;
+box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.testimonial p { font-style: italic; margin-bottom: 0.5rem; }
+.testimonial .author { font-weight: bold; }
+
+footer {
+background: #063d77;
+color: #fff;
+padding: 2rem;
+text-align: center;
+}
+footer a { color: #ffd54f; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+<img src="https://via.placeholder.com/150x50?text=Pure+Duct" alt="Pure Duct Cleaners Logo">
+<nav>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a href="tel:+18772389978" class="btn-call">Call Now</a>
+<a href="https://wa.me/918772389978" class="btn-whatsapp">WhatsApp</a>
+</nav>
+</header>
+
+<div class="slider">
+<div class="slides">
+<div class="slide" style="background-image: url('https://source.unsplash.com/1600x900/?duct,cleaning');">
+<h2>Deep Duct Cleaning</h2>
+</div>
+<div class="slide" style="background-image: url('https://source.unsplash.com/1600x900/?furnace,clean');">
+<h2>Furnace & HVAC Service</h2>
+</div>
+<div class="slide" style="background-image: url('https://source.unsplash.com/1600x900/?air,filter');">
+<h2>Air Quality Protection</h2>
+</div>
+</div>
+</div>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="services">
+<div class="service-card">
+<h3>Whole House Duct Cleaning</h3>
+<p>Complete house duct cleaning using advanced equipment for best results.</p>
+<span class="price">$259 per session</span>
+</div>
+<div class="service-card">
+<h3>Furnace & HVAC Cleaning</h3>
+<p>Keep your HVAC systems clean, efficient, and safe.</p>
+<span class="price">$199 per unit</span>
+</div>
+<div class="service-card">
+<h3>Air Quality Filter Replacement</h3>
+<p>High-quality filters replaced regularly for healthier indoor air.</p>
+<span class="price">$49 per filter</span>
+</div>
+</div>
+</section>
+
+<section id="about">
+<h2>About Pure Duct Cleaners</h2>
+<p>
+At Pure Duct Cleaners, we are dedicated to improving indoor air quality and enhancing system performance.
+With over 10 years of experience, our certified technicians use top-grade equipment
+to ensure your home breathes fresh and clean. We care for your comfort and health.
+</p>
+</section>
+
+<section id="testimonials">
+<h2>What Our Customers Say</h2>
+<div class="testimonials">
+<div class="testimonial">
+<p>"Amazing service! My home air has never felt cleaner."</p>
+<div class="author">— Sarah K.</div>
+</div>
+<div class="testimonial">
+<p>"Prompt, professional, and worth every penny."</p>
+<div class="author">— Ahmed R.</div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Get In Touch</h2>
+<p>Ready for fresh air? Call us or WhatsApp right now!</p>
+<a href="tel:+18772389978" class="btn-call">Call Now</a>
+<a href="https://wa.me/918772389978" class="btn-whatsapp">WhatsApp Us</a>
+</section>
+
+<footer>
+&copy; 2025 Pure Duct Cleaners. All rights reserved.<br>
+Designed by Pure Duct Cleaners Solutions
+</footer>
+
+</body>
+</html>
